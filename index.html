@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Fulbright Pray </title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="prayStyle.css">
+        <link rel="author" href="https://github.com/lanphgphm" content="full idea credit to FPT Pray">
+    </head>
+    <body> 
+        <h1> thắp hương cầu nguyện </h1> 
+        <div id="container"> 
+            <img src="images/decoratedBanTho.png" alt="bàn thờ có hai lọ hoa và một bát hương"> 
+            <div id="animate" style="display: none;">
+                <img src="images/huongBe.png" id="nhang" alt="nén nhang để thắp">
+            </div> 
+        </div>
+        <hr> 
+        <!--label for="clientwish"> ghi điều ước của bạn ở đây: </label> <br--> 
+        <input type="text" id="clientwish" placeholder="lời cầu nguyện của bạn..." autofocus> <br> 
+        <p> <button class="button" onclick="thapHuong()"> Thắp hương </button> </p>
+        
+        <script type="text/javascript"> 
+            function thapHuong() {
+                let id = null;
+                const nenNhang = document.getElementById("animate"); 
+                nenNhang.style.display = "block";   
+                let position = 0;
+                clearInterval(id);
+                id = setInterval(translate, 20);
+                new Audio('music/nhacGioiTre.mp3').play(); 
+                /* currently cannot print message witht this code
+                document.getElementById("clientwish").val("");
+                const loiChuc = document.getElementById("confirm").innerHTML = "mong muốn của bạn đã được gửi đi \n chúc bạn may mắn";
+                */ 
+                function translate() {
+                    if (position == 120) {
+                    clearInterval(id);
+                    } else {
+                    position++; 
+                    nenNhang.style.top = position + "px"; 
+                    }
+                }
+            }
+        </script> 
+    </body>
+</html>

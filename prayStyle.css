@@ -1,0 +1,48 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('images/landscape.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+#clientwish {
+    border: 2px solid grey; 
+    border-radius: 5px;
+    height: 70px;
+    width: 300px;
+}
+
+.button {
+    background-color: lightgray;
+    padding: 10px; 
+    border-radius: 5px;
+    border: none;
+    transition-delay: 2ms;
+}
+
+.button:hover {
+    background-color: darkgray;
+}
+
+#container {
+    position: relative; 
+}
+
+#animate {
+    position: absolute; 
+    top: 0px; 
+    left: 48%; 
+}
+
+#nhang {
+    width: 50px;
+}
+
