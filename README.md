@@ -1,5 +1,4 @@
-FULPRAY 
-ĐÌNH PHƯƠNG MAI 
+FULPRAY - ĐÌNH PHƯƠNG MAI 
 
 Inspired by FPT Pray, FulPray is a place where students of Fulbright University Vietnam can come and place their wishes. No particular miracle is guaranteed, but sometimes all we need is an illusion of being guarded and taken care of by the gods. 
 
