@@ -7,14 +7,14 @@ h1 {
 }
 
 body {
-    background-image: url('images/vagueFUV.png'); 
+    background-image: url('images/vagueFUV.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
 
 #clientwish {
-    border: 2px solid grey; 
+    border: 2px solid grey;
     border-radius: 5px;
     height: 70px;
     width: 300px;
@@ -22,7 +22,7 @@ body {
 
 .button {
     background-color: lightgray;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 5px;
     border: none;
     transition-delay: 2ms;
@@ -33,16 +33,15 @@ body {
 }
 
 #container {
-    position: relative; 
+    position: relative;
 }
 
 #animate {
-    position: absolute; 
-    top: 0px; 
-    left: 48%; 
+    position: absolute;
+    top: 0px;
+    left: 48%;
 }
 
 #nhang {
     width: 50px;
 }
-
