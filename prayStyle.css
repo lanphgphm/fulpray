@@ -7,14 +7,14 @@ h1 {
 }
 
 body {
-    background-image: url('images/vagueFUV.png'); 
+    background-image: url('images/vagueFUV.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
 
 #clientwish {
-    border: 2px solid grey; 
+    border: 2px solid grey;
     border-radius: 5px;
     height: 70px;
     width: 300px;
@@ -22,27 +22,42 @@ body {
 
 .button {
     background-color: lightgray;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 5px;
     border: none;
     transition-delay: 2ms;
+    transition: 0.1s; /* Smooth out the transition between states */
 }
 
 .button:hover {
     background-color: darkgray;
+    transform: translateY(-1px); /* Gives the button some movement */
+}
+
+.button:active {
+    transform: translateY(1px); /* Pressing a button physically */
 }
 
 #container {
-    position: relative; 
+    position: relative;
 }
 
 #animate {
-    position: absolute; 
-    top: 0px; 
-    left: 48%; 
+    position: absolute;
+    top: 0px;
+    /* Better center of nhang */
+    left: 50%;
+    transform: translate(-47%, 0%);
 }
 
 #nhang {
     width: 50px;
 }
 
+/* Better scaling on small devices */
+@media screen and (max-width: 602px) { /* Increase if glitches */
+    #ban-tho {
+        transform: translateY(calc(295px - 48vw));
+        max-width: 100%;
+    }
+}
