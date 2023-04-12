@@ -9,3 +9,6 @@ Full idea credit to https://fptpray.com/ nand its author. This project is made o
 
 ## Special thanks 
 Special thanks to Hoàng Minh for centering the nhang & style fixes. 
+
+## Self-tag 
+personal-project
